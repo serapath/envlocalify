@@ -1,0 +1,31 @@
+{
+  "name": "envlocalify",
+  "version": "1.0.0",
+  "description": "envify and localenv combined as a browserify transform # envlocalify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "browserify-transform",
+    "dotenv",
+    "envify",
+    "localenv",
+    "env"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serapath/envlocalify.git"
+  },
+  "author": "serapath <dev@serapath.de> (http://www.github.com/serapath)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serapath/envlocalify/issues"
+  },
+  "homepage": "https://github.com/serapath/envlocalify#readme",
+  "dependencies": {
+    "envify": "^3.4.0",
+    "localenv": "^0.2.2",
+    "subarg": "^1.0.0"
+  }
+}
