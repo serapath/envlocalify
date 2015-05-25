@@ -29,7 +29,8 @@ And a `.env` file sitting in your current working dir.
 FOO=bar
 ```
 
-Running atomify with the envlocalify transform:
+**Running atomify with the envlocalify transform:**  
+*(if you change **environment files** in atomify server and/or watch mode, you need to restart atomify)*
 
 ```shell
 atomify --envlocalify
