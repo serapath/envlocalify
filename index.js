@@ -1,11 +1,15 @@
 var localenv = require('localenv/noload');
+var exemethod = require('exemethod');
 var path = require('path');
 var args = process.argv.slice(2)
 var argv = require('subarg')(args);
 
 module.exports = function envlocalify(file, opts) {
-  if (process.env.NODE_ENV === 'production') {
-    return;
+  if (process.env.NODE_ENV === "production") {
+    var method = exemethod();
+    if (method !== 'browserify') {
+      return require('envify')('no.json');
+    }
   }
 
   var environment = [];

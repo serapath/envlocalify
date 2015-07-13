@@ -1,6 +1,6 @@
 {
   "name": "envlocalify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "envify and localenv combined as a browserify transform # envlocalify",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/serapath/envlocalify#readme",
   "dependencies": {
     "envify": "^3.4.0",
+    "exemethod": "^1.2.4",
     "localenv": "^0.2.2",
     "subarg": "^1.0.0"
   }
