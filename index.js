@@ -6,7 +6,7 @@ var argv = require('subarg')(args);
 
 module.exports = function envlocalify(file, opts) {
   if (process.env.NODE_ENV === "production") {
-    var method = exemethod();
+    var method = exemethod(function(a,b){return b;});
     if (method !== 'browserify') {
       return require('envify')('no.json');
     }
